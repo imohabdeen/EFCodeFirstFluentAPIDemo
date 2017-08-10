@@ -59,6 +59,7 @@
     <Compile Include="SchoolContext.cs" />
     <Compile Include="Standard.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="StudentAddress.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
