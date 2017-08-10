@@ -49,9 +49,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Course.cs" />
     <Compile Include="Migrations\201708101547006_InitialCreation.cs" />
     <Compile Include="Migrations\201708101547006_InitialCreation.Designer.cs">
       <DependentUpon>201708101547006_InitialCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101644209_OneToZeroOROneRelationship.cs" />
+    <Compile Include="Migrations\201708101644209_OneToZeroOROneRelationship.Designer.cs">
+      <DependentUpon>201708101644209_OneToZeroOROneRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101656209_OneToManyRelationship.cs" />
+    <Compile Include="Migrations\201708101656209_OneToManyRelationship.Designer.cs">
+      <DependentUpon>201708101656209_OneToManyRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101701098_ManyToManyRelationship.cs" />
+    <Compile Include="Migrations\201708101701098_ManyToManyRelationship.Designer.cs">
+      <DependentUpon>201708101701098_ManyToManyRelationship.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -71,6 +84,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708101547006_InitialCreation.resx">
       <DependentUpon>201708101547006_InitialCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101644209_OneToZeroOROneRelationship.resx">
+      <DependentUpon>201708101644209_OneToZeroOROneRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101656209_OneToManyRelationship.resx">
+      <DependentUpon>201708101656209_OneToManyRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101701098_ManyToManyRelationship.resx">
+      <DependentUpon>201708101701098_ManyToManyRelationship.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

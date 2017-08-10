@@ -18,7 +18,13 @@ namespace EFCodeFirstFluentAPIDemo
         public byte[] Photo { get; set; }
         public decimal Height { get; set; }
         public float Weight { get; set; }
+        public int StandardId { get; set; }
 
         public Standard Standard { get; set; }
+        public virtual StudentAddress Address { get; set; }
+
+        public virtual ICollection<Course> Courses { get; set; }
+
+
     }
 }
